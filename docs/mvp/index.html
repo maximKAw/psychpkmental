@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Каталог Колледж-круг MVP</title>
+  <style>
+    :root {
+      --mint: #a8e6cf;
+      --sky: #a8d4f0;
+      --lavender: #c9c3e6;
+      --paper: #f7fafb;
+      --ink: #2a3542;
+      --muted: #5f6f7f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      color: var(--ink);
+      background: linear-gradient(145deg,
+        color-mix(in oklab, var(--sky), white 40%),
+        var(--paper),
+        color-mix(in oklab, var(--lavender), white 52%));
+      min-height: 100vh;
+    }
+    header {
+      padding: 2.5rem 1.25rem 1.75rem;
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 0.35rem;
+      font-weight: 700;
+      font-size: 1.85rem;
+      letter-spacing: -0.02em;
+    }
+    p.lead {
+      margin: 0 auto;
+      max-width: 36rem;
+      color: var(--muted);
+      line-height: 1.45;
+      font-size: 1.02rem;
+    }
+    main {
+      max-width: 44rem;
+      margin: 0 auto;
+      padding: 0 1.25rem 3rem;
+    }
+    ul.cards {
+      list-style: none;
+      padding: 0;
+      margin: 1.75rem 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+    .card {
+      background: rgba(255,255,255,0.72);
+      border-radius: 1.25rem;
+      padding: 1rem 1.15rem;
+      box-shadow: 0 12px 32px rgba(42,53,66,0.08);
+      border: 1px solid rgba(255,255,255,0.9);
+      backdrop-filter: blur(8px);
+    }
+    .card h2 {
+      margin: 0 0 0.35rem;
+      font-size: 1.1rem;
+    }
+    .card p {
+      margin: 0 0 0.65rem;
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+    .card a {
+      display: inline-block;
+      font-weight: 600;
+      font-size: 0.93rem;
+      color: color-mix(in oklab, #3b82f6, var(--sky));
+      text-decoration: none;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.85);
+      border: 1px solid rgba(59,130,246,0.22);
+      margin-right: 0.35rem;
+    }
+    .card a:hover {
+      background: rgba(255,255,255,1);
+      border-color: rgba(59,130,246,0.42);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 1.25rem 2.5rem;
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    code {
+      font-size: 0.82em;
+      background: rgba(42,53,66,0.06);
+      padding: 0.1em 0.35em;
+      border-radius: 0.35em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Каталог приложения<br />«Колледж‑круг» MVP</h1>
+    <p class="lead">
+      Сырые данные для мобильного клиента без бэкенда: JSON на GitHub Pages.
+      Приложение читает эти файлы по кнопке «Подтянуть каталог», а пользовательские ответы живут в офлайн-очереди до POST на ваш сервер.
+    </p>
+  </header>
+  <main>
+    <ul class="cards">
+      <li class="card">
+        <h2>Техники (обновляемый каталог)</h2>
+        <p>Структура: заголовки, короткий подзаголовок, шаги практики. Имена ключей см. в файле.</p>
+        <a href="./techniques.json">techniques.json</a>
+      </li>
+      <li class="card">
+        <h2>Советы психолога</h2>
+        <p>Поддерживающие тексты; сами советы статичные, живые заметки студента добавляются в приложении через очередь.</p>
+        <a href="./psychologist_tips.json">psychologist_tips.json</a>
+      </li>
+      <li class="card">
+        <h2>Квесты и ежедневные задания</h2>
+        <p>Тип <code>quest</code> или <code>daily</code>; флажки выполнения и заметки — в SQLite телефона.</p>
+        <a href="./quests.json">quests.json</a>
+      </li>
+      <li class="card">
+        <h2>Правила достижений</h2>
+        <p>Иконки задаются ключами приложения (<code>air</code>, <code>menu_book</code> и т.д.).</p>
+        <a href="./achievements.json">achievements.json</a>
+      </li>
+      <li class="card">
+        <h2>Участники (после Google Forms)</h2>
+        <p>Roster со стабильным <code>id</code>, именем и email из анкеты; PIN задаётся только в приложении. Обновление — скриптом из таблицы ответов.</p>
+        <a href="./users.json">users.json</a>
+      </li>
+    </ul>
+    <footer>
+      Если вы открыли эту страницу на Pages, базовый путь задаётся в приложении через
+      <code>GH_PAGES_BASE</code>; для выгрузки ответов — отдельно <code>OUTBOX_INGEST_URL</code>.
+      <br /><br />
+      <a href="https://flutter.dev/">Flutter SDK</a> · репозиторий проекта: настройте публикацию каталога в <strong>/docs</strong>.
+    </footer>
+  </main>
+</body>
+</html>

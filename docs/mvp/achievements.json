@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "ach_profile",
+      "title": "Первый шаг к себе",
+      "description": "Сохранён профиль с именем",
+      "icon": "person_add",
+      "rule": "profile_saved"
+    },
+    {
+      "id": "ach_breath",
+      "title": "Дыхание как якорь",
+      "description": "Завершена мини‑игра «Дыхание круга»",
+      "icon": "air",
+      "rule": "breathing_done"
+    },
+    {
+      "id": "ach_memory",
+      "title": "Память и спокойствие",
+      "description": "Собраны все пары в «Памяти мятных карточек»",
+      "icon": "grid_on",
+      "rule": "memory_done"
+    },
+    {
+      "id": "ach_colors",
+      "title": "Мягкий порядок",
+      "description": "Упорядочены оттенки в «Радуге спокойствия»",
+      "icon": "palette",
+      "rule": "colors_done"
+    },
+    {
+      "id": "ach_technique",
+      "title": "Практика рядом",
+      "description": "Отмечена практика любой техники",
+      "icon": "self_improvement",
+      "rule": "technique_practiced"
+    },
+    {
+      "id": "ach_tips",
+      "title": "Чтение с заботой",
+      "description": "Открыты три совета психолога",
+      "icon": "menu_book",
+      "rule": "tips_opened_3"
+    },
+    {
+      "id": "ach_task",
+      "title": "Задание выполнено",
+      "description": "Отмечено первое задание из списка",
+      "icon": "task_alt",
+      "rule": "task_done"
+    },
+    {
+      "id": "ach_ripple",
+      "title": "Круги на воде",
+      "description": "Завершена игра «Пруд спокойных кругов»",
+      "icon": "water_drop",
+      "rule": "ripple_done"
+    },
+    {
+      "id": "ach_word_scr",
+      "title": "Слова без спешки",
+      "description": "Собраны три слова в игре расшифровки",
+      "icon": "sort_by_alpha",
+      "rule": "word_scr_done"
+    },
+    {
+      "id": "ach_pattern_soft",
+      "title": "Повтор с мягким светом",
+      "description": "Пройден спокойный цветовой узор",
+      "icon": "blur_on",
+      "rule": "pattern_soft_done"
+    },
+    {
+      "id": "ach_gratitude_three",
+      "title": "Три слова к себе",
+      "description": "Выбраны три тёплых слова в мини‑игре",
+      "icon": "favorite_border",
+      "rule": "gratitude_three_done"
+    }
+  ]
+}

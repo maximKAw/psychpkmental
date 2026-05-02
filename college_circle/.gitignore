@@ -1,0 +1,33 @@
+# Dart / Flutter
+.dart_tool/
+.flutter-plugins-dependencies
+.packages
+.pub/
+build/
+coverage/
+
+# IntelliJ / Android Studio
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Cursor / VS Code (optional machine-specific)
+*.code-workspace
+
+# Android local
+**/android/local.properties
+
+# Xcode / CocoaPods
+**/ios/**/*.xcuserstate
+**/ios/.symlinks/
+**/ios/Flutter/ephemeral/
+
+# macOS
+**/macos/Flutter/ephemeral/
+
+# Symbolication related
+**/app.*.symbols
+
+# Exceptions to Flutter ephemeral
+!/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages

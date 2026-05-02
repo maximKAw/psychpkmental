@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    {
+      "id": "demo",
+      "email": "",
+      "displayName": "Демонстрационный аккаунт",
+      "course": "1 курс",
+      "interests": "учёба, творчество",
+      "desiredClub": "",
+      "login": "demo"
+    },
+    {
+      "id": "student_01",
+      "email": "student01@example.invalid",
+      "displayName": "Студент 01",
+      "course": "",
+      "interests": "спорт",
+      "desiredClub": "Спортивный сектор",
+      "login": "student_01"
+    },
+    {
+      "id": "student_02",
+      "email": "",
+      "displayName": "Студент 02",
+      "course": "",
+      "interests": "",
+      "desiredClub": "",
+      "login": "student_02"
+    }
+  ]
+}
