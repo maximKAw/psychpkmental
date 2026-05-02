@@ -10,6 +10,15 @@
       "desiredClub": "",
       "login": "demo"
     },
+   {
+  "id": "artem_efimov_2026",
+  "email": "aleksejgedronov@gmail.com",
+  "displayName": "Артём ефимов",
+  "course": "401",
+  "interests": "Стихи пишу",
+  "desiredClub": "Театр",
+  "login": "aleksejgedronov@gmail.com"
+},
     {
       "id": "student_01",
       "email": "student01@example.invalid",
